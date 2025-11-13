@@ -4,6 +4,7 @@ This project implements real-time camera frame processing using Android (Kotlin 
 The Android app captures camera frames, processes them in native C++ using OpenCV, and displays the output using an OpenGL surface.
 
 **Features Implemented**
+
 Android
 
  Live camera feed using Camera2 API
@@ -27,7 +28,8 @@ Web
  Demonstrates bidirectional communication concept (architecture explanation)
 
 **Screenshots**
-Output
+Screenshot1.png
+Screenshot2.png
 
 **Setup Instructions**
 1. Install Requirements
