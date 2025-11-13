@@ -3,68 +3,69 @@ FlameEdgeApp – Android + Web Edge Detection Project
 This project implements real-time camera frame processing using Android (Kotlin + OpenCV + NDK/JNI) and a web interface (TypeScript).
 The Android app captures camera frames, processes them in native C++ using OpenCV, and displays the output using an OpenGL surface.
 
-Features Implemented
+**Features Implemented**
 Android
 
-Live camera feed using Camera2 API
+ Live camera feed using Camera2 API
 
-Frame conversion (YUV → NV21 → RGBA)
+ Frame conversion (YUV → NV21 → RGBA)
 
-Native image processing using OpenCV + C++
+ Native image processing using OpenCV + C++
 
-Real-time rendering using OpenGL (GLSurfaceView)
+ Real-time rendering using OpenGL (GLSurfaceView)
 
-JNI bridge between Kotlin and C++
+ JNI bridge between Kotlin and C++
 
-FPS indicator
+ FPS indicator
 
-Orientation-corrected camera preview
+ Orientation-corrected camera preview
 
 Web
 
-Simple TypeScript script to interact with the Android module
+ Simple TypeScript script to interact with the Android module
 
-Demonstrates bidirectional communication concept (architecture explanation)
+ Demonstrates bidirectional communication concept (architecture explanation)
 
-Screenshots
+**Screenshots**
+Output
 
-Setup Instructions
+**Setup Instructions**
 1. Install Requirements
 
-Android Studio (latest)
+  Android Studio (latest)
 
-Android NDK (Version 21+)
+  Android NDK (Version 21+)
 
-CMake + LLDB installed in SDK Tools
+  CMake + LLDB installed in SDK Tools
 
-OpenCV Android SDK (OpenCV-4.x)
+  OpenCV Android SDK (OpenCV-4.x)
 
 2. Add OpenCV to Project
 
-Copy the sdk/native and java bindings into your project
+  Copy the sdk/native and java bindings into your project
 
-Add opencv_java4 and c++_shared loading in MainActivity
+  Add opencv_java4 and c++_shared loading in MainActivity
 
 3. Build Native Code
 
-CMake builds:
+  CMake builds:
 
-native-lib.cpp
+    native-lib.cpp
 
-OpenCV .so libraries
+    OpenCV .so libraries
 
-Texture rendering methods
+    Texture rendering methods
 
 4. Run on Device
 
-Enable USB debugging
+  Enable USB debugging
 
-Build & Run App
+  Build & Run App
 
-Grant camera permission
+  Grant camera permission
 
-App displays processed camera frames
+  App displays processed camera frames
 
-Architecture Overview
+**Architecture Overview**
 Frame Flow
 Camera2 → YUV_420_888 → Kotlin → JNI → C++ → OpenCV → Texture → GLSurfaceView
