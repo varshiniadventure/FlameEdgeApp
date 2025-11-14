@@ -28,6 +28,7 @@ Web
  Demonstrates bidirectional communication concept (architecture explanation)
 
 **Screenshots**
+Screenshots are uploaded in this repository as: 
 Screenshot1.png
 Screenshot2.png
 
