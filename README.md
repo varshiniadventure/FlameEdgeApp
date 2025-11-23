@@ -31,7 +31,9 @@ Web
 Screenshots are uploaded in this repository as:  
 Screenshot1.jpg
 https://github.com/varshiniadventure/FlameEdgeApp/blob/main/Screenshot1.jpg
+
 Screenshot2.jpg
+https://github.com/varshiniadventure/FlameEdgeApp/blob/main/Screenshot2.jpg
 
 **Setup Instructions**
 1. Install Requirements
