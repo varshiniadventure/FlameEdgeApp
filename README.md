@@ -73,5 +73,9 @@ https://github.com/varshiniadventure/FlameEdgeApp/blob/main/Screenshot2.jpg
   App displays processed camera frames
 
 **Architecture Overview**
-Frame Flow
-Camera2 → YUV_420_888 → Kotlin → JNI → C++ → OpenCV → Texture → GLSurfaceView
+Camera frames are captured using Camera2 in Android and first handled in Kotlin. The raw YUV frame is passed to the native C++ layer through JNI, where OpenCV performs edge detection. The processed frame is then converted to a texture and rendered in real time using OpenGL/GLSurfaceView.
+
+Camera2 → Kotlin → JNI → C++ (OpenCV) → OpenGL → Screen
+
+
+A minimal TypeScript web module communicates with the Android side to demonstrate cross-platform interaction — sending configuration commands (e.g., enable filter, toggle mode) and receiving status information such as FPS and processing state. It represents a future-ready model for remote control or monitoring of the native image processing pipeline.
