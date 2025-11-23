@@ -30,6 +30,7 @@ Web
 **Screenshots**
 Screenshots are uploaded in this repository as:  
 Screenshot1.jpg
+https://github.com/varshiniadventure/FlameEdgeApp/blob/main/Screenshot1.jpg
 Screenshot2.jpg
 
 **Setup Instructions**
